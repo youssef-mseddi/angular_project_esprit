@@ -1,7 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { ProductComponent } from './product/product.component';
+import { ListSuggestionComponent } from './list-suggestion/list-suggestion.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: 'home', component: HomeComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },// path par defaut redirige vers home
+  { path: 'products', component: ProductComponent },
+  { path: 'suggestion', component: ListSuggestionComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
