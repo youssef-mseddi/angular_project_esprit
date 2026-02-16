@@ -8,8 +8,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductComponent } from './product/product.component';
 import { FormsModule } from '@angular/forms';
-import { ListSuggestionComponent } from './list-suggestion/list-suggestion.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { SuggestionModule } from './suggestion/suggestion.module';
 
 @NgModule({
   declarations: [
@@ -18,13 +18,14 @@ import { NotFoundComponent } from './not-found/not-found.component';
     HeaderComponent,
     FooterComponent,
     ProductComponent,
-    ListSuggestionComponent,
     NotFoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    SuggestionModule
+
   ],
   providers: [
     provideClientHydration()
