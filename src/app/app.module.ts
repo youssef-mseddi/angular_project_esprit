@@ -10,6 +10,7 @@ import { ProductComponent } from './product/product.component';
 import { FormsModule } from '@angular/forms';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { SuggestionModule } from './suggestion/suggestion.module';
+import { FormulaireComponent } from './formulaire/formulaire.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SuggestionModule } from './suggestion/suggestion.module';
     HeaderComponent,
     FooterComponent,
     ProductComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    FormulaireComponent
   ],
   imports: [
     BrowserModule,
