@@ -7,7 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductComponent } from './product/product.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { SuggestionModule } from './suggestion/suggestion.module';
 import { FormulaireComponent } from './formulaire/formulaire.component';
@@ -26,7 +26,8 @@ import { FormulaireComponent } from './formulaire/formulaire.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    SuggestionModule
+    SuggestionModule,
+    ReactiveFormsModule// pour les formulaires reactifs
 
   ],
   providers: [
